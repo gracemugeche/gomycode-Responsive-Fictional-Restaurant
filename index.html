@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Munch</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="# Urban Munch">Urban Munch</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="# Menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <!-- hero section -->
+      <section>
+        <div class="hero">
+          <h1>Welcome to Urban Munch</h1>
+          <p>
+            Indulge in a fusion of flavors that excite your taste buds. From
+            sizzling grills to mouthwatering desserts, we bring you a culinary
+            adventure like no other.
+          </p>
+          <img
+            src="images/heroimage.jpg"
+            alt="Delicious food"
+            class="hero-img"
+          />
+          <a href="#" class="btn btn-warning btn-lg">Explore Menu</a>
+        </div>
+        <hr />
+      </section>
+
+      <!-- menu section -->
+      <section class="container text-center my-5">
+        <h2 class="fw-bold mb-4">🍽️ Our Menu:</h2>
+        <!-- Menu Item 1 -->
+        <div class="col-md-4">
+          <div class="menu-card-body">
+            <h3 class="menu-title">chicken wrap</h3>
+            <img src="images/foodimage1.jpg" alt="wrap" />
+            <p class="menu-description">
+              A soft tortilla filled with juicy grilled chicken, crisp lettuce,
+              fresh tomatoes, and a creamy garlic sauce. Perfectly seasoned and
+              wrapped for a delicious, on-the-go meal.
+            </p>
+            <p class="menu-price">Price: KSh 750</p>
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="col-md-4">
+          <div class="menu-card-body">
+            <h3 class="menu-title">Beef Burger</h3>
+            <img src="images/foodimage2.jpg" alt="Burger" />
+            <p class="menu-description">
+              Juicy beef patty with fresh lettuce and cheese.
+            </p>
+            <p class="menu-price">Price: KSh 950</p>
+          </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="col-md-4">
+          <div class="menu-card-body">
+            <h3 class="menu-title">chicken wings</h3>
+            <img src="images/foodimage3.jpg" alt="chicken wings" />
+            <p class="menu-description">
+              Crispy, juicy, and saucy—pure finger-licking goodness!
+            </p>
+            <p class="menu-price">Price: KSh 850</p>
+          </div>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="col-md-4">
+          <div class="menu-card-body">
+            <h3 class="menu-title">margareta pizza</h3>
+            <img src="images/foodimage4.jpg" alt="pizza" />
+            <p class="menu-description">
+              A cheesy, crispy delight loaded with fresh toppings and rich
+              flavors. Every slice is pure satisfaction!
+            </p>
+            <p class="menu-price">Price: KSh 850</p>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <section class="about-us">
+        <!-- about us section -->
+        <h2>About Us:</h2>
+        <div>
+          <!-- Image Section -->
+          <img src="images/image 5.jpg" alt="Restaurant Image" />
+          <!-- Text Section -->
+          <p>
+            Welcome to <strong>Urban Munch</strong>, where we bring you a blend
+            of delicious flavors and unforgettable dining experiences. Our chefs
+            craft each dish with passion, using fresh ingredients to ensure
+            top-notch quality. Whether you're here for a casual meal or a
+            special occasion, we guarantee a warm and delightful atmosphere.
+            Come and taste the difference!
+          </p>
+        </div>
+      </section>
+      <hr />
+
+      <section id="contact-form">
+        <!-- contact section -->
+        <h2>📩 Contact Us</h2>
+        <div>
+          <form action="submit-form.php" method="post">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4"></textarea><br />
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <hr />
+      <p>&copy; 2025 Urban Munch. All Rights Reserved.</p>
+      <p>
+        Follow us on:
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </p>
+    </footer>
+  </body>
+</html>
