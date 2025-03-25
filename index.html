@@ -4,15 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urban Munch</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      /* Internal CSS */
+      .hero {
+        background-image: url("images/heroimage.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
+
     <!-- header section -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,129 +66,185 @@
 
     <main>
       <!-- hero section -->
-      <section>
-        <div class="hero">
-          <h1>Welcome to Urban Munch</h1>
-          <p>
-            Indulge in a fusion of flavors that excite your taste buds. From
-            sizzling grills to mouthwatering desserts, we bring you a culinary
-            adventure like no other.
-          </p>
-          <img
-            src="images/heroimage.jpg"
-            alt="Delicious food"
-            class="hero-img"
-          />
-          <a href="#" class="btn btn-warning btn-lg">Explore Menu</a>
-        </div>
+      <section
+        class="hero d-flex flex-column align-items-flex-start justify-content-center text-white text-center"
+      >
+        <h1 class="fw-bold display-4">Welcome to Urban Munch</h1>
+        <p>
+          Indulge in a fusion of flavors that excite your taste buds. From
+          sizzling grills to mouthwatering desserts, we bring you a culinary
+          adventure like no other.
+        </p>
+        <!-- CTA BUTTON -->
+        <button class="btn btn-light fw-bold px-4 py-2 mt-3">
+          Explore Menu
+        </button>
         <hr />
       </section>
 
       <!-- menu section -->
-      <section class="container text-center my-5">
+      <div class="container text-center my-5">
         <h2 class="fw-bold mb-4">🍽️ Our Menu:</h2>
+
         <!-- Menu Item 1 -->
-        <div class="col-md-4">
-          <div class="menu-card-body">
-            <h3 class="menu-title">chicken wrap</h3>
-            <img src="images/foodimage1.jpg" alt="wrap" />
-            <p class="menu-description">
-              A soft tortilla filled with juicy grilled chicken, crisp lettuce,
-              fresh tomatoes, and a creamy garlic sauce. Perfectly seasoned and
-              wrapped for a delicious, on-the-go meal.
-            </p>
-            <p class="menu-price">Price: KSh 750</p>
+        <div class="card-deck">
+          <div class="card" style="width: 400px">
+            <h2>chicken wrap</h2>
+            <img
+              class="card-img-top"
+              src="images/foodimage1.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                A soft tortilla filled with juicy grilled chicken, crisp
+                lettuce, fresh tomatoes, and a creamy garlic sauce. Perfectly
+                seasoned and wrapped for a delicious, on-the-go meal.
+              </p>
+              <p class="menu-price">Price: KSh 750</p>
+              <a href="#" class="btn btn-primary">order now</a>
+            </div>
+          </div>
+
+          <!--Menu Item 2 -->
+          <div class="card" style="width: 400px">
+            <h2>Beef Burger</h2>
+            <img
+              class="card-img-top"
+              src="images/foodimage2.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Juicy beef patty with fresh lettuce and cheese.
+              </p>
+              <p class="menu-price">Price: KSh 950</p>
+              <a href="#" class="btn btn-primary">order now</a>
+            </div>
           </div>
         </div>
 
-        <!-- Menu Item 2 -->
-        <div class="col-md-4">
-          <div class="menu-card-body">
-            <h3 class="menu-title">Beef Burger</h3>
-            <img src="images/foodimage2.jpg" alt="Burger" />
-            <p class="menu-description">
-              Juicy beef patty with fresh lettuce and cheese.
-            </p>
-            <p class="menu-price">Price: KSh 950</p>
+        <!--Menu Item 3 -->
+        <div class="card-deck">
+          <div class="card" style="width: 400px">
+            <h2>chicken wings</h2>
+            <img
+              class="card-img-top"
+              src="images/foodimage3.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Crispy, juicy, and saucy—pure finger-licking goodness!
+              </p>
+              <p class="menu-price">Price: KSh 850</p>
+              <a href="#" class="btn btn-primary">order now</a>
+            </div>
+          </div>
+
+          <!--Menu Item 4 -->
+          <div class="card" style="width: 400px">
+            <h2>margareta pizza</h2>
+            <img
+              class="card-img-top"
+              src="images/foodimage4.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                A cheesy, crispy delight loaded with fresh toppings and rich
+                flavors. Every slice is pure satisfaction!
+              </p>
+              <p class="menu-price">Price: KSh 850</p>
+              <a href="#" class="btn btn-primary">order now</a>
+            </div>
           </div>
         </div>
+      </div>
 
-        <!-- Menu Item 3 -->
-        <div class="col-md-4">
-          <div class="menu-card-body">
-            <h3 class="menu-title">chicken wings</h3>
-            <img src="images/foodimage3.jpg" alt="chicken wings" />
-            <p class="menu-description">
-              Crispy, juicy, and saucy—pure finger-licking goodness!
-            </p>
-            <p class="menu-price">Price: KSh 850</p>
+      <!-- About us section -->
+      <section id="Aboutus" class="Aboutus">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              height="600px"
+              width="600px"
+              src="images/image 5.jpg"
+              alt="Restaurant Image"
+            />
           </div>
-        </div>
 
-        <!-- Menu Item 4 -->
-        <div class="col-md-4">
-          <div class="menu-card-body">
-            <h3 class="menu-title">margareta pizza</h3>
-            <img src="images/foodimage4.jpg" alt="pizza" />
-            <p class="menu-description">
-              A cheesy, crispy delight loaded with fresh toppings and rich
-              flavors. Every slice is pure satisfaction!
+          <div class="col-md-6">
+            <h2>About Us:</h2>
+            <!-- Text Section -->
+            <p>
+              Welcome to <strong>Urban Munch</strong>, where we bring you a
+              blend of delicious flavors and unforgettable dining experiences.
+              Our chefs craft each dish with passion, using fresh ingredients to
+              ensure top-notch quality. Whether you're here for a casual meal or
+              a special occasion, we guarantee a warm and delightful atmosphere.
+              Come and taste the difference!
             </p>
-            <p class="menu-price">Price: KSh 850</p>
+            <p>
+              Follow us: <a href="#" target="_blank">Facebook</a> |
+              <a href="#" target="_blank">Instagram</a> |
+              <a href="#" target="_blank">Twitter</a>
+            </p>
           </div>
         </div>
       </section>
       <hr />
 
-      <section class="about-us">
-        <!-- about us section -->
-        <h2>About Us:</h2>
-        <div>
-          <!-- Image Section -->
-          <img src="images/image 5.jpg" alt="Restaurant Image" />
-          <!-- Text Section -->
-          <p>
-            Welcome to <strong>Urban Munch</strong>, where we bring you a blend
-            of delicious flavors and unforgettable dining experiences. Our chefs
-            craft each dish with passion, using fresh ingredients to ensure
-            top-notch quality. Whether you're here for a casual meal or a
-            special occasion, we guarantee a warm and delightful atmosphere.
-            Come and taste the difference!
-          </p>
-        </div>
-      </section>
-      <hr />
-
+      <!-- contact section -->
       <section id="contact-form">
-        <!-- contact section -->
-        <h2>📩 Contact Us</h2>
-        <div>
-          <form action="submit-form.php" method="post">
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required /><br />
-
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br />
-
-            <label for="message">Message:</label><br />
-            <textarea id="message" name="message" rows="4"></textarea><br />
-
-            <button type="submit">Send Message</button>
+        <h2 class="text-center mb-4">📩 Contact Us</h2>
+        <div class="container">
+          <form class="p-4 shadow-sm rounded bg-light">
+            <div class="mb-3">
+              <label for="name">name:</label>
+              <input
+                type="name"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+                name="name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+                name="email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="reservation" class="form-label">Reservation</label>
+              <textarea
+                class="form-control"
+                id="reservation"
+                rows="3"
+                placeholder="place your order here"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Book Now
+            </button>
           </form>
         </div>
       </section>
     </main>
 
     <!-- footer section -->
-    <footer>
-      <hr />
-      <p>&copy; 2025 Urban Munch. All Rights Reserved.</p>
-      <p>
-        Follow us on:
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-      </p>
+    <footer class="text-center">
+      <p>&copy; 2025 Urban Munch. All rights reserved.</p>
+      <p>Location: Nairobi, Kenya</p>
     </footer>
   </body>
 </html>
